@@ -1,0 +1,34 @@
+{
+	"name": "demo",
+	"version": "0.1.0",
+	"license": "MIT",
+	"description": "A beautiful chat rooms component made with Vue.js",
+	"author": "Antoine Dupont <antoindupontdev@gmail.com>",
+	"scripts": {
+		"serve": "vue-cli-service serve",
+		"s": "npm run serve",
+		"build": "vue-cli-service build",
+		"lint": "vue-cli-service lint",
+		"reset": "rm -rf node_modules && rm -rf package-lock.json && npm i",
+		"reset-all": "npm run reset && cd .. && npm run reset",
+		"gpages": "sh deploy.sh",
+		"latest": "npm i https://github.com/antoine92190/vue-advanced-chat/tarball/master"
+	},
+	"dependencies": {
+		"firebase": "^9.8.2",
+		"vue": "^2.6.14",
+		"vue-advanced-chat": "latest"
+	},
+	"devDependencies": {
+		"@vue/cli-plugin-babel": "^4.5.13",
+		"@vue/cli-plugin-eslint": "^4.5.13",
+		"@vue/cli-service": "^4.5.13",
+		"@vue/eslint-config-standard": "^4.0.0",
+		"babel-eslint": "^10.0.3",
+		"eslint": "^6.8.0",
+		"eslint-plugin-vue": "^7.14.0",
+		"node-sass": "^6.0.1",
+		"sass-loader": "^10.1.1",
+		"vue-template-compiler": "^2.6.14"
+	}
+}
